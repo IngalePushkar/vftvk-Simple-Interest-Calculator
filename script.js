@@ -3,7 +3,7 @@ var years = 1
 var interest = 3.5
 
 function compute() {
-  if (principal && principal != 0) {
+  if (principal && principal > 0) {
     document.getElementById('result-box').style.display = 'block'
 
     var result = ((principal * years * interest) / 100).toFixed(2)
@@ -15,7 +15,8 @@ function compute() {
     document.getElementById('result').innerHTML = result
 
   } else {
-    alert('Please Enter Principal Amount')
+    if(principal === 0) alert('Please Enter Principal Amount');
+    else if(principal < 0) alert('Please Enter Positive Principal Amount')
   }
 }
 
