@@ -6,8 +6,6 @@ function compute() {
   if (principal && principal != 0) {
     document.getElementById('result-box').style.display = 'block'
 
-    console.log(principal, years, interest);
-
     var result = ((principal * years * interest) / 100).toFixed(2)
     var year = new Date().getFullYear() + Math.floor(years)
 
