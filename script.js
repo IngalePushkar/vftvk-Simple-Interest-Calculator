@@ -15,8 +15,7 @@ function compute() {
     document.getElementById('result').innerHTML = result
 
   } else {
-    if(principal === 0) alert('Please Enter Principal Amount');
-    else if(principal < 0) alert('Please Enter Positive Principal Amount')
+    alert('Please Enter Positive Principal Amount')
   }
 }
 
